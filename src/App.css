@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
-}
+  margin:0;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.tweet--form{
+  margin-top: 3%;
+  width:400px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.tweetCard {
+  margin-top:3%;
+  width: 700px;
+  padding: 1%;
+  transition: 1s ease-in;
+}
+.tweetCard:hover {
+  cursor: pointer;
+  transform: scale(102%);
+  box-shadow: 1px 5px 5px rgb(36, 32, 32);
+}
+.submit {
+  margin-left: 60%;
+  width: 150px;
+}
+.back{
+  margin-top: 30px;
+  margin-left: 75%;
+}
+.friends-list{
+  background-color: rgb(74, 120, 255);
+
+  margin: 2rem;
+  margin-top: 5%;
+  min-width: 450px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px rgb(95, 95, 220);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.friends-list > h2 {
+  color:white;
+}
+.friend {
+  display: flex;
+  background-color: white;
+  height: 4rem;
+  border-radius: 5px;
+  font-size:medium;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+}
+.friend:hover {
+  box-shadow: 2px 5px 5px rgb(0, 0, 0);
+  transform: scale(102%);
+}
+.friend > h3 {
+  font-size:medium;
+}
+.friend > img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.enlarger{
+  font-size: 30px;
+  vertical-align: middle;
+
+  margin-left: -6%;
+}
+.logo {
+  display: flex;
+  color:white;
+  width: 40%;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.spacer {
+  margin-right:50%;
+}
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+i:hover{
+  transform: scale(105%);
 }
