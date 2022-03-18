@@ -7,7 +7,7 @@ import Tweet from './components/Tweet';
 import FriendsList from './components/FriendsList';
 import { faker } from '@faker-js/faker';
 import profilePicture from './Assets/profilePic.png';
-import * as timeago from 'timeago.js';
+//import timeago from 'timeago.js';
 
 // import {
 //   get,
@@ -46,7 +46,7 @@ function App() {
     username: '',
     message:'',
     profilePicture: profilePicture,
-    timeStamp: timeago.format(new Date()),
+    timeStamp: new Date(),
     id: Math.floor(Math.random() * 10000000000),
   })
 

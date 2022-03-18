@@ -40,7 +40,7 @@ export default function Tweet (props) {
         </p>
         <footer className="blockquote-footer">
 
-          {props.timeStamp}
+
           {element}
 
         </footer>
@@ -49,4 +49,4 @@ export default function Tweet (props) {
   </Card>
   )
 }
-
+//props.timeStamp}
