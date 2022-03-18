@@ -34,7 +34,7 @@ function App() {
         username: faker.name.findName(),
         profilePicture: profilePicture,
         message: faker.hacker.phrase(),
-        timeStamp: timeago.format(new Date()),
+        timeStamp: new Date(),
         id: Math.floor(Math.random() * 10000000000),
       })
   }
